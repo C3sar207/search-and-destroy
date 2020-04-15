@@ -2,7 +2,17 @@
 
 //Complete this algo
 const isLoop = (linkedlist) => {
+	let firstNode = linkedlist.head
+	let secondNode = firstNode.next;
+	while(firstNode !== secondNode){
+		if(firstNode === null || secondNode === null){
+			return false
+		}
+		firstNode = firstNode.next
+		secondNode = secondNode.next.next
 
+	}
+	return true
 };
 
 
